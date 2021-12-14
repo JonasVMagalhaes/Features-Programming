@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="example">
+    <h1>Exemplo</h1>
+    <div
+      style.background-color="{{ div.backgroundColor }}"
+      style.height="{{ div.height }}px"
+      style.width="{{ div.height }}px"
+    ></div>
+  </div>
+
+  <div class="config">
+    <h1>Configurações</h1>
+
+    <h5>Input: {{ val2 }}</h5>
+    <input type="text" pInputText [(ngModel)]="div.height" readonly />
+    <p-slider [(ngModel)]="div.height"></p-slider>
+  </div>
+</div>
